@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | 大學四年專案展示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#projects">成果展示</a></li>
+            <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (個人 IP 定位區) -->
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <span class="tag">🎓 大學成果總覽</span>
+            <h1>嗨，我是 [你的名字]</h1>
+            <p class="subtitle">專注於 [你的領域，如：Web 開發 / 資料分析 / UIUX 設計]，用程式實踐想法的創作者。</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">瀏覽四年專案</a>
+                <a href="https://github.com/你的帳號" target="_blank" class="btn secondary-btn">GitHub 主頁</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 四年作品展示區 -->
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">大學四年成果與專案</h2>
+        
+        <!-- 年級篩選按鈕 -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部成果</button>
+            <button class="filter-btn" data-filter="year1">大一：基礎建構</button>
+            <button class="filter-btn" data-filter="year2">大二：進階開發</button>
+            <button class="filter-btn" data-filter="year3">大三：核心專案</button>
+            <button class="filter-btn" data-filter="year4">大四：畢業專題</button>
+        </div>
+
+        <!-- 專案卡片容器 -->
+        <div class="projects-grid">
+            <!-- 大一卡片 -->
+            <div class="project-card" data-category="year1">
+                <div class="card-tag">大一</div>
+                <h3>個人部落格小工具</h3>
+                <p>使用 HTML/CSS 打造的第一台靜態網頁，學習基礎版面佈局與 RWD 觀念。</p>
+                <div class="tech-stack">
+                    <span>HTML5</span><span>CSS3</span>
+                </div>
+                <a href="#" class="card-link">檢視專案 &rarr;</a>
+            </div>
+
+            <!-- 大二卡片 -->
+            <div class="project-card" data-category="year2">
+                <div class="card-tag">大二</div>
+                <h3>學生待辦事項管理系統</h3>
+                <p>導入 JavaScript LocalStorage 技術，實現資料在地儲存與動態 UI 渲染。</p>
+                <div class="tech-stack">
+                    <span>JavaScript</span><span>DOM</span>
+                </div>
+                <a href="#" class="card-link">檢視專案 &rarr;</a>
+            </div>
+
+            <!-- 大三卡片 -->
+            <div class="project-card" data-category="year3">
+                <div class="card-tag">大三</div>
+                <h3>全端電商 API 平台</h3>
+                <p>串接 RESTful API，完成使用者驗證、商品搜尋與購物車結帳流程。</p>
+                <div class="tech-stack">
+                    <span>React</span><span>Node.js</span>
+                </div>
+                <a href="#" class="card-link">檢視專案 &rarr;</a>
+            </div>
+
+            <!-- 大四卡片 -->
+            <div class="project-card" data-category="year4">
+                <div class="card-tag">大四</div>
+                <h3>畢業專題：AI 智慧輔助系統</h3>
+                <p>整合機器學習模型與 Web 介面，獲選年度優秀專題作品。</p>
+                <div class="tech-stack">
+                    <span>Python</span><span>Vue.js</span><span>FastAPI</span>
+                </div>
+                <a href="#" class="card-link">檢視專案 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾/聯絡資訊 -->
+    <footer class="footer" id="contact">
+        <p>&copy; 2026 [你的名字]. All Rights Reserved.</p>
+        <p>聯絡信箱：your.email@example.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
